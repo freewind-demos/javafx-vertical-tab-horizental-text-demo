@@ -1,5 +1,5 @@
-JavaFX Hello World Demo
-=======================
+JavaFX Tabs Demo
+================
 
-Show a window with `Hello, JavaFX` label.
+Open `Hello.kt` in your IDE.
 
