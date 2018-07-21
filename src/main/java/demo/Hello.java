@@ -1,6 +1,7 @@
 package demo;
 
 import javafx.application.Application;
+import javafx.geometry.Side;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -26,6 +27,9 @@ public class Hello extends Application {
 
     private Node createTabs() {
         return new TabPane() {{
+            getStylesheets().add("tab.css");
+            setSide(Side.LEFT);
+            setTabClosingPolicy(TabClosingPolicy.UNAVAILABLE);
             getTabs().addAll(
                     new Tab("tab1") {{
                         setContent(new Pane() {{
